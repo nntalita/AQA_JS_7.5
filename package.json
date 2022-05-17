@@ -1,0 +1,19 @@
+{
+  "name": "7-6-1",
+  "version": "1.0.0",
+  "description": "Cypress - installation and configuration of the project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "npx cypress open",
+    "cy:run:chrome:headed": "cypress run --browser chrome --headed",
+    "cy:run:chrome:headless": "cypress run --browser chrome --headless",
+    "cy:run:electron:headless": "cypress run --browser electron --headless",
+    "cy:run:electron:headed": "cypress run --browser electron --headed"
+  },
+  "author": "NPletneva",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^9.5.4"
+  }
+}
