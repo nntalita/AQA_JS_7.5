@@ -11,14 +11,12 @@ describe("When user should is on login page, user", () => {
   it("Should be not able to login with empty email and password", () => {
     cy.visit("/");
     cy.login("  ", "123");
-
     cy.get("#mail")
       .then(($el) => $el[0].checkValidity())
       .should("be.false");
     cy.get("#mail")
       .then(($el) => $el[0].validationMessage)
       .should("contain", "Заполните это поле");
-
     cy.get("#mail").then(($el) => cy.log($el[0]));
   });
 });
